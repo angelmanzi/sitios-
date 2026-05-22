@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Audio guiado de 45 minutos con peticiones de Ho'oponopono para liberar creencias limitantes. Método Reconexión Raíz® por Ángel Manzi. Acceso vía Hotmart. Precio: 17€."/>
+<meta property="og:title" content="Sesión 45' – Peticiones de Ho'oponopono"/>
+<meta property="og:description" content="Audio único de 45 minutos. Precio: 17€. Compra directa en Hotmart."/>
+<meta property="og:type" content="website"/>
+<meta name="theme-color" content="#0f0c1a"/>
+<title>Sesión 45' – Peticiones de Ho'oponopono | Método Reconexión Raíz®</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --night: #0a0814;
+  --deep: #120e24;
+  --card: #1a1530;
+  --gold: #c9a84c;
+  --gold-light: #e8c96a;
+  --gold-pale: rgba(201,168,76,.12);
+  --text: #f0eaf8;
+  --muted: #9e96b5;
+  --border: rgba(201,168,76,.2);
+  --r: 14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--night);color:var(--text);overflow-x:hidden;line-height:1.6}
+
+/* ── PARTICLES ── */
+.particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:hidden}
+.particle{position:absolute;border-radius:50%;background:var(--gold);opacity:0;animation:float linear infinite}
+@keyframes float{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:.35}90%{opacity:.1}100%{transform:translateY(-10vh) scale(1);opacity:0}}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(to bottom,rgba(10,8,20,.95),transparent);backdrop-filter:blur(8px)}
+.nav-brand{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
+.nav-cta{font-size:12px;font-weight:600;padding:8px 20px;border-radius:50px;background:var(--gold);color:#000;text-decoration:none;letter-spacing:.5px;transition:all .2s}
+.nav-cta:hover{background:var(--gold-light);transform:scale(1.04)}
+
+/* ── HERO ── */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:7rem 1.5rem 4rem;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(139,90,200,.18) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 20% 80%,rgba(201,168,76,.08) 0%,transparent 60%),var(--night)}
+.hero-glow{position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.06) 0%,transparent 70%);pointer-events:none}
+.hero-content{position:relative;z-index:2;max-width:700px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;padding:6px 16px;border:1px solid var(--border);border-radius:50px;background:var(--gold-pale)}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,6vw,68px);font-weight:700;line-height:1.1;margin-bottom:1.5rem;color:var(--text)}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:16px;color:var(--muted);max-width:480px;margin:0 auto 2.5rem;line-height:1.7}
+.hero-price{display:inline-flex;align-items:baseline;gap:6px;margin-bottom:2rem}
+.price-num{font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:700;color:var(--gold);line-height:1}
+.price-sym{font-size:24px;color:var(--gold);margin-top:8px}
+.price-note{font-size:12px;color:var(--muted);margin-left:4px}
+.hero-btns{display:flex;flex-direction:column;align-items:center;gap:12px}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#000;font-weight:700;font-size:15px;border-radius:50px;text-decoration:none;transition:all .25s;letter-spacing:.3px;border:none;cursor:pointer;font-family:'DM Sans',sans-serif}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(201,168,76,.4)}
+.btn-secondary{font-size:13px;color:var(--muted);text-decoration:underline;cursor:pointer;background:none;border:none;font-family:'DM Sans',sans-serif}
+.btn-secondary:hover{color:var(--gold)}
+.hero-trust{display:flex;align-items:center;justify-content:center;gap:20px;margin-top:2.5rem;flex-wrap:wrap}
+.trust-item{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.trust-icon{color:var(--gold);font-size:14px}
+
+/* ── WAVE VISUAL ── */
+.wave-section{padding:3rem 1.5rem;display:flex;justify-content:center}
+.wave-container{position:relative;width:100%;max-width:500px;height:80px;display:flex;align-items:center;justify-content:center;gap:3px}
+.wave-bar{width:3px;border-radius:3px;background:var(--gold);opacity:.7;animation:wave ease-in-out infinite}
+@keyframes wave{0%,100%{transform:scaleY(.3)}50%{transform:scaleY(1)}}
+
+/* ── SECTIONS ── */
+section{position:relative;z-index:1;padding:5rem 1.5rem}
+.container{max-width:700px;margin:0 auto}
+.section-label{font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,42px);font-weight:700;line-height:1.2;margin-bottom:1rem;color:var(--text)}
+.section-sub{font-size:15px;color:var(--muted);max-width:520px;margin:0 auto 3rem;line-height:1.7}
+.text-center{text-align:center}
+
+/* ── INCLUDES ── */
+.includes-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:2rem}
+.include-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;display:flex;align-items:flex-start;gap:12px}
+.include-card.no{border-color:rgba(255,255,255,.06);opacity:.6}
+.inc-icon{font-size:20px;flex-shrink:0;margin-top:2px}
+.inc-text{font-size:14px;color:var(--muted);line-height:1.5}
+.inc-text strong{color:var(--text);display:block;margin-bottom:3px;font-size:13px}
+
+/* ── HOW IT WORKS ── */
+.steps{display:flex;flex-direction:column;gap:0}
+.step{display:flex;gap:20px;align-items:flex-start;padding:1.5rem 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.step:last-child{border-bottom:none}
+.step-num{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:700;color:var(--gold);opacity:.3;line-height:1;flex-shrink:0;width:48px;text-align:center}
+.step-body h3{font-size:15px;font-weight:600;margin-bottom:4px;color:var(--text)}
+.step-body p{font-size:14px;color:var(--muted);line-height:1.6}
+
+/* ── TESTIMONIALS ── */
+.testi-grid{display:flex;flex-direction:column;gap:16px}
+.testi-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem}
+.testi-stars{color:var(--gold);font-size:14px;margin-bottom:10px;letter-spacing:2px}
+.testi-text{font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:var(--text);line-height:1.6;margin-bottom:12px}
+.testi-name{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:1px;text-transform:uppercase}
+
+/* ── FORM ── */
+.form-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2.5rem;max-width:480px;margin:0 auto}
+.form-card h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;margin-bottom:.5rem;color:var(--text)}
+.form-card p{font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.6}
+.field{margin-bottom:1rem}
+.field input{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--text);font-family:'DM Sans',sans-serif;outline:none;transition:border .2s}
+.field input::placeholder{color:var(--muted)}
+.field input:focus{border-color:var(--gold)}
+.field-check{display:flex;gap:10px;align-items:flex-start;margin-bottom:1.5rem}
+.field-check input{margin-top:3px;accent-color:var(--gold);flex-shrink:0}
+.field-check label{font-size:12px;color:var(--muted);line-height:1.5}
+.field-check a{color:var(--gold)}
+.gdpr-note{font-size:11px;color:var(--muted);text-align:center;margin-top:12px;opacity:.7}
+
+/* ── FAQ ── */
+.faq-list{display:flex;flex-direction:column;gap:0}
+.faq-item{border-bottom:1px solid rgba(255,255,255,.06)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:1.2rem 0;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-q:hover{color:var(--gold)}
+.faq-arrow{font-size:18px;color:var(--gold);transition:transform .25s;flex-shrink:0}
+.faq-a{font-size:14px;color:var(--muted);line-height:1.7;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .25s}
+.faq-item.open .faq-arrow{transform:rotate(45deg)}
+.faq-item.open .faq-a{max-height:200px;padding-bottom:1.2rem}
+
+/* ── FOOTER ── */
+footer{border-top:1px solid var(--border);padding:3rem 1.5rem 2rem;text-align:center}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--gold);margin-bottom:.25rem}
+.footer-by{font-size:13px;color:var(--muted);margin-bottom:1.5rem}
+.footer-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:1.5rem}
+.footer-link{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s}
+.footer-link:hover{color:var(--gold)}
+.footer-link svg{width:16px;height:16px;fill:currentColor}
+.privacy{font-size:12px;color:var(--muted);line-height:1.7;max-width:500px;margin:0 auto 1.5rem;opacity:.7}
+.copyright{font-size:11px;color:var(--muted);opacity:.5;letter-spacing:.5px}
+
+/* ── STICKY CTA ── */
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:200;padding:1rem 1.5rem;background:linear-gradient(to top,var(--night) 60%,transparent);display:none}
+.sticky-cta a{display:flex;justify-content:center;align-items:center;gap:10px;padding:14px;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#000;font-weight:700;font-size:15px;border-radius:14px;text-decoration:none;transition:all .2s;letter-spacing:.3px;box-shadow:0 8px 30px rgba(201,168,76,.35)}
+
+/* ── DIVIDER ── */
+.divider{width:60px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);margin:0 auto 2.5rem}
+
+/* ── STAT STRIP ── */
+.stat-strip{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;padding:2rem;background:var(--card);border-radius:var(--r);border:1px solid var(--border);margin-bottom:4rem}
+.stat-item{text-align:center}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;color:var(--gold);line-height:1}
+.stat-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+
+@media(max-width:520px){
+  .includes-grid{grid-template-columns:1fr}
+  .hero-trust{gap:12px}
+  .stat-strip{gap:1.5rem}
+  .stat-num{font-size:28px}
+  .sticky-cta{display:block}
+}
+@media(min-width:521px){
+  .sticky-cta{display:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- Particles -->
+<div class="particles" id="particles"></div>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-brand">Reconexión Raíz®</div>
+  <a href="https://go.hotmart.com/B102169579J" target="_blank" rel="noopener" class="nav-cta">Comprar · 17€</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">✦ Método Reconexión Raíz® · Ángel Manzi ✦</div>
+    <h1>Sesión de <em>Ho'oponopono</em><br/>45 minutos guiados</h1>
+    <p class="hero-sub">Un audio único para liberar creencias limitantes y ordenar tu mente con peticiones claras, profundas y efectivas.</p>
+    <div class="hero-price">
+      <span class="price-sym">€</span>
+      <span class="price-num">17</span>
+      <span class="price-note">· pago único</span>
+    </div>
+    <div class="hero-btns">
+      <a href="https://go.hotmart.com/B102169579J" target="_blank" rel="noopener" class="btn-primary" id="mainCta">
+        ✦ Comprar en Hotmart
+      </a>
+      <button class="btn-secondary" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">Prefiero dejar mis datos primero</button>
+    </div>
+    <div class="hero-trust">
+      <span class="trust-item"><span class="trust-icon">🔒</span> Pago 100% seguro</span>
+      <span class="trust-item"><span class="trust-icon">⚡</span> Acceso inmediato</span>
+      <span class="trust-item"><span class="trust-icon">♾</span> Sin vencimiento</span>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave-section" aria-hidden="true">
+  <div class="wave-container" id="waveContainer"></div>
+</div>
+
+<!-- Stats -->
+<section style="padding:0 1.5rem 3rem">
+  <div class="container">
+    <div class="stat-strip">
+      <div class="stat-item"><div class="stat-num">+800</div><div class="stat-label">Personas beneficiadas</div></div>
+      <div class="stat-item"><div class="stat-num">45'</div><div class="stat-label">Audio guiado</div></div>
+      <div class="stat-item"><div class="stat-num">17€</div><div class="stat-label">Precio único</div></div>
+      <div class="stat-item"><div class="stat-num">∞</div><div class="stat-label">Escúchalo cuando quieras</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- What's included -->
+<section id="incluye">
+  <div class="container text-center">
+    <div class="section-label">El producto</div>
+    <h2 class="section-title">¿Qué obtenés con esta sesión?</h2>
+    <div class="divider"></div>
+    <div class="includes-grid">
+      <div class="include-card">
+        <div class="inc-icon">🎧</div>
+        <div class="inc-text"><strong>Audio guiado de 45 minutos</strong>Peticiones de Ho'oponopono narradas paso a paso.</div>
+      </div>
+      <div class="include-card">
+        <div class="inc-icon">✨</div>
+        <div class="inc-text"><strong>Fórmula práctica</strong>"Divinidad, limpia dentro de mí…" con variaciones guiadas.</div>
+      </div>
+      <div class="include-card">
+        <div class="inc-icon">🌿</div>
+        <div class="inc-text"><strong>Enfoque inclusivo</strong>Compatible con cualquier creencia espiritual o religiosa.</div>
+      </div>
+      <div class="include-card">
+        <div class="inc-icon">🔁</div>
+        <div class="inc-text"><strong>Acceso ilimitado</strong>Repetí la sesión cuantas veces necesites, sin fecha de vencimiento.</div>
+      </div>
+      <div class="include-card no">
+        <div class="inc-icon">✖</div>
+        <div class="inc-text"><strong>Sin PDFs extra</strong>Este producto es solo el audio. Sin materiales adicionales.</div>
+      </div>
+      <div class="include-card no">
+        <div class="inc-icon">✖</div>
+        <div class="inc-text"><strong>Sin mini-lecciones</strong>No es un curso. Es una sesión directa e inmediata.</div>
+      </div>
+    </div>
+    <a href="https://go.hotmart.com/B102169579J" target="_blank" rel="noopener" class="btn-primary">✦ Quiero esta sesión · 17€</a>
+  </div>
+</section>
+
+<!-- How it works -->
+<section id="como-funciona" style="background:var(--deep)">
+  <div class="container">
+    <div class="section-label text-center">El proceso</div>
+    <h2 class="section-title text-center">Cómo funciona</h2>
+    <div class="divider"></div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Comprás en Hotmart</h3>
+          <p>Proceso de pago 100% seguro. Aceptan tarjetas, transferencia y más medios según tu país.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Recibís acceso inmediato</h3>
+          <p>Hotmart te envía el enlace de descarga al correo automáticamente tras la compra.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Buscás un momento tranquilo</h3>
+          <p>Auriculares puestos, ojos cerrados, posición cómoda. 45 minutos son suficientes para empezar.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Repetís cuando lo necesités</h3>
+          <p>No hay caducidad. Volvé al audio cada vez que sientas que necesitás limpiar y reconectar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section>
+  <div class="container text-center">
+    <div class="section-label">Lo que dicen</div>
+    <h2 class="section-title">Experiencias reales</h2>
+    <div class="divider"></div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">"Nunca había podido soltar algo que cargaba hace diez años. Después de la tercera vez que escuché el audio, algo simplemente… se fue. No tengo otra forma de explicarlo."</div>
+        <div class="testi-name">— María G., Buenos Aires</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">"Era escéptica al principio. Pero la voz de Ángel y el ritmo del audio te llevan a un estado de calma que yo no lograba ni meditando sola. Vale mucho más que los 17€."</div>
+        <div class="testi-name">— Claudia R., Madrid</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">"Lo escucho cada domingo por la mañana. Se convirtió en un ritual. Empecé a tomar decisiones desde un lugar mucho más tranquilo y claro."</div>
+        <div class="testi-name">— Roberto M., Ciudad de México</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Form -->
+<section id="form" style="background:var(--deep)">
+  <div class="container text-center">
+    <div class="section-label">¿Preferís recibir el link?</div>
+    <h2 class="section-title">Te lo enviamos al correo</h2>
+    <p class="section-sub">Dejá tus datos y te mandamos el enlace de Hotmart directamente. También podés comprar con los botones de arriba.</p>
+    <div class="form-card">
+      <h3>Dejá tus datos</h3>
+      <p>Sin spam. Solo el link de compra y nada más.</p>
+      <div class="field"><input type="text" placeholder="Tu nombre" autocomplete="name"/></div>
+      <div class="field"><input type="email" placeholder="Tu correo electrónico" autocomplete="email"/></div>
+      <div class="field-check">
+        <input type="checkbox" id="privacy"/>
+        <label for="privacy">Acepto la <a href="#privacidad">política de privacidad</a> para recibir el enlace de compra.</label>
+      </div>
+      <button class="btn-primary" style="width:100%;justify-content:center" onclick="handleSubmit()">Enviar y recibir link ✦</button>
+      <p class="gdpr-note">🔒 GDPR: tus datos son solo para enviarte el link. Podés darte de baja cuando quieras.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-label text-center">Dudas frecuentes</div>
+    <h2 class="section-title text-center">Preguntas frecuentes</h2>
+    <div class="divider"></div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Qué incluye exactamente? <span class="faq-arrow">+</span></button>
+        <div class="faq-a">Solo el audio guiado de 45 minutos. No hay PDFs, checklist ni mini-lecciones adicionales. El enfoque es directo y sin distracciones.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Cómo accedo tras la compra? <span class="faq-arrow">+</span></button>
+        <div class="faq-a">Comprás en Hotmart y recibís el acceso automáticamente por email. El proceso es inmediato y no requiere ningún paso adicional.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Cuántas veces puedo escucharlo? <span class="faq-arrow">+</span></button>
+        <div class="faq-a">Ilimitadas. No tiene fecha de vencimiento. Es tuyo para siempre. Muchas personas lo escuchan semanalmente como práctica de mantenimiento.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Esto es religioso? <span class="faq-arrow">+</span></button>
+        <div class="faq-a">No. Es una práctica espiritual inclusiva, compatible con cualquier creencia religiosa o filosófica. No requiere ninguna fe previa ni cambiar tus convicciones.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Necesito experiencia previa en meditación? <span class="faq-arrow">+</span></button>
+        <div class="faq-a">No. El audio está diseñado para guiarte desde cero. La voz y las peticiones te llevan paso a paso. No necesitás saber meditar para aprovecharlo al máximo.</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem">
+      <a href="https://go.hotmart.com/B102169579J" target="_blank" rel="noopener" class="btn-primary">✦ Comenzar ahora · 17€</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-brand">Método Reconexión Raíz®</div>
+  <div class="footer-by">por Ángel Manzi</div>
+  <div class="footer-links">
+    <a href="mailto:metodoreconexionraiz@ik.me" class="footer-link">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      metodoreconexionraiz@ik.me
+    </a>
+    <a href="https://youtube.com/@angelmanzi.oficial" target="_blank" class="footer-link">
+      <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+      @angelmanzi.oficial
+    </a>
+    <a href="https://tiktok.com/@angelmanzi.oficial" target="_blank" class="footer-link">
+      <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+      @angelmanzi.oficial
+    </a>
+  </div>
+  <div id="privacidad" class="privacy">
+    <strong style="color:var(--gold);font-size:11px;letter-spacing:1px;text-transform:uppercase">Privacidad (GDPR)</strong><br/>
+    Usamos tu email solo para enviarte el enlace de compra si lo solicitás. Podés darte de baja con un clic. No compartimos tus datos con terceros. Cumplimos con el Reglamento General de Protección de Datos de la UE.
+  </div>
+  <div class="copyright">© Método Reconexión Raíz® · Todos los derechos reservados</div>
+</footer>
+
+<!-- Sticky CTA mobile -->
+<div class="sticky-cta">
+  <a href="https://go.hotmart.com/B102169579J" target="_blank" rel="noopener">✦ Comprar ahora · 17€</a>
+</div>
+
+<script>
+// Particles
+(function(){
+  const c = document.getElementById('particles');
+  for(let i=0;i<18;i++){
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const s = Math.random()*4+2;
+    p.style.cssText = `width:${s}px;height:${s}px;left:${Math.random()*100}%;animation-duration:${Math.random()*15+10}s;animation-delay:${Math.random()*10}s`;
+    c.appendChild(p);
+  }
+})();
+
+// Wave bars
+(function(){
+  const w = document.getElementById('waveContainer');
+  const bars = 48;
+  for(let i=0;i<bars;i++){
+    const b = document.createElement('div');
+    b.className = 'wave-bar';
+    const h = Math.sin(i/bars*Math.PI)*50+20;
+    b.style.height = h+'px';
+    b.style.animationDelay = (i/bars*1.5)+'s';
+    b.style.animationDuration = (1.2+Math.random()*.8)+'s';
+    w.appendChild(b);
+  }
+})();
+
+// FAQ
+function toggleFaq(btn){
+  const item = btn.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!isOpen) item.classList.add('open');
+}
+
+// Form
+function handleSubmit(){
+  const name = document.querySelector('.form-card input[type="text"]').value.trim();
+  const email = document.querySelector('.form-card input[type="email"]').value.trim();
+  const check = document.getElementById('privacy').checked;
+  if(!name||!email){alert('Por favor completá tu nombre y correo.');return;}
+  if(!check){alert('Necesitás aceptar la política de privacidad.');return;}
+  const btn = document.querySelector('.form-card .btn-primary');
+  btn.textContent = '✓ ¡Listo! Revisá tu correo.';
+  btn.style.background = '#2d6a2d';
+  btn.style.color = '#fff';
+  btn.disabled = true;
+}
+
+// Smooth scroll for anchor buttons
+document.querySelectorAll('a[href="https://go.hotmart.com/B102169579J" target="_blank" rel="noopener"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    document.querySelector('.hero').scrollIntoView({behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>
