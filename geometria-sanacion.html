@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometría Sanación - Horizontal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            overflow: hidden;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        #container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background: #fff;
+        }
+        canvas {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .brand-container {
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .name {
+            font-size: 28px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin: 0;
+        }
+        .tagline {
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.6;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <div class="brand-container">
+            <p class="name">AngelManzi.Oficial</p>
+            <p class="tagline">Borrado Memorias • Sanación</p>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const container = document.getElementById('container');
+
+        let width, height, center;
+        let time = 0;
+
+        function resize() {
+            width = container.clientWidth;
+            height = container.clientHeight;
+            canvas.width = width;
+            canvas.height = height;
+            center = { x: width / 2, y: height / 2 };
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+
+        function drawPetal(x, y, radius, rotation, color) {
+            ctx.save();
+            ctx.translate(x, y);
+            ctx.rotate(rotation);
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.bezierCurveTo(radius / 2, -radius / 2, radius, -radius / 4, radius, 0);
+            ctx.bezierCurveTo(radius, radius / 4, radius / 2, radius / 2, 0, 0);
+            ctx.fillStyle = color;
+            ctx.fill();
+            ctx.restore();
+        }
+
+        function animate() {
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+            ctx.fillRect(0, 0, width, height);
+
+            time += 0.01;
+
+            const layers = 5;
+            const petalsPerLayer = 8;
+            const colors = [
+                'rgba(44, 62, 80, 0.15)',
+                'rgba(52, 152, 219, 0.25)',
+                'rgba(142, 68, 173, 0.3)',
+                'rgba(41, 128, 185, 0.2)',
+                'rgba(100, 180, 220, 0.4)'
+            ];
+
+            for (let i = layers; i > 0; i--) {
+                const layerRadius = (height * 0.15) + i * (height * 0.1) + Math.sin(time + i) * 20;
+                const rotationOffset = time * (i % 2 === 0 ? 0.2 : -0.2);
+
+                for (let j = 0; j < petalsPerLayer; j++) {
+                    const angle = (j / petalsPerLayer) * Math.PI * 2 + rotationOffset;
+                    const petalSize = (height * 0.12) + i * (height * 0.05) + Math.cos(time) * 10;
+                    drawPetal(center.x, center.y, petalSize, angle, colors[i % colors.length]);
+                }
+            }
+
+            ctx.beginPath();
+            ctx.arc(center.x, center.y, 15 + Math.sin(time * 2) * 5, 0, Math.PI * 2);
+            ctx.strokeStyle = '#2c3e50';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+
+            const ringCount = 3;
+            for (let i = 0; i < ringCount; i++) {
+                const ringProgress = (time * 0.5 + i / ringCount) % 1;
+                const ringRadius = ringProgress * width * 0.6;
+                const opacity = (1 - ringProgress) * 0.3;
+                ctx.beginPath();
+                ctx.arc(center.x, center.y, ringRadius, 0, Math.PI * 2);
+                ctx.strokeStyle = `rgba(52, 152, 219, ${opacity})`;
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        // Arrancar directamente sin esperar onload
+        animate();
+    </script>
+</body>
+</html>
